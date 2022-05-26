@@ -1,7 +1,7 @@
 FROM amazonlinux
 RUN yum install -y httpd \
   zip \
-unzip 
+ unzip 
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page33/neko02.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip neko02.zip
